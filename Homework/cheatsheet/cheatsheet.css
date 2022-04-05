@@ -31,6 +31,7 @@ body {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-family: "Roboto", "sans-serif";
+  
 }
 
 .body-container,
@@ -90,6 +91,9 @@ section {
 .navbar {
   color: aliceblue;
   text-align: center;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .navlinks {
@@ -97,6 +101,9 @@ section {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
 }
 
 .navlinks a {
@@ -123,6 +130,9 @@ footer {
   height: 2rem;
   background-color: rgb(70, 70, 70);
   color: aliceblue;
+  text-align: center;
+  font-family: 'Rubik Moonrocks', cursive;
+  font-size: 12px;
 }
 
 .full-border {
@@ -209,4 +219,33 @@ footer {
 .padding {
   padding: 20px;
   border: 1px solid #222;
+}
+
+.block {
+  display: block;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.flex {
+  display: flex;
+  height: 100px;
+  border: 1px solid rgb(255, 55, 55);
+  margin: 10px;
+}
+
+.overflow {
+  overflow: scroll;
+  height: 100px;
+  border: 1px solid rgb(55, 82, 255);
+  margin: 10px;
+}
+
+position {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
