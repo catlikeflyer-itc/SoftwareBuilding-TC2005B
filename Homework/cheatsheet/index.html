@@ -10,12 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Moonrocks&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/cheatsheet.css" />
+    <link rel="stylesheet" href="./cheatsheet.css" />
+    <script src="https://kit.fontawesome.com/f6f40ebb56.js" crossorigin="anonymous"></script>
     <title>HTML Cheatsheet</title>
   </head>
   <body>
     <div class="title-container">
       <h1 class="title-text">HTML Cheatsheet</h1>
+      <nav class="navbar">
+        This is a navbar, helps us to order navigation items.
+        <div class="navlinks">
+          <a href="index.html"><p>HTML</p></a>
+          <a href="css.html"><p>CSS</p></a>
+        </div>
+      </nav>
     </div>
     <div class="body-container">
       <section id="headers">
@@ -36,15 +44,34 @@
           </p>
         </div>
       </section>
-      <section id="div">
-        <h2 subtitle-text>Divs</h2>
+      <section class="special-text">
+        <h2 class="subtitle-text">Special text</h2>
+        <p>
+          Special text is text that is rendered in a different way. There are
+          different types of special text. Each text in this render box is separated by a break (br).
+        </p>
+        <div class="white-render-box">
+          <span>This is a span</span><br />
+          <i class="fa-solid fa-rocket"></i><br />
+          <u>U tag used for mispellings</u><br />
+          <b>B tag used for bold text</b><br />
+          <strong>Strong tag used for bold text</strong><br />
+          <em>Em tag used for italic text</em><br />
+          <small>Small tag used for smaller text</small><br />
+          <del>Del tag used for deleted text</del><br />
+        </div>
+      </section>
+      <section id="divs">
+        <h2 subtitle-text>Separators</h2>
         <p>
           Divs are used to create a container for other elements. They can be
-          used to create a grid or a flexbox.
+          used to create a grid or a flexbox. Sections are used to separate between
+          different contents. Article is used to make a content specific to a concept.
         </p>
         <div class="white-render-box">
           <div class="div-container">
             <div class="div-box1">
+              <h1>This is a div</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
                 eveniet doloremque, commodi optio possimus mollitia, illo
@@ -52,22 +79,28 @@
                 magni culpa praesentium exercitationem eius. Numquam!
               </p>
             </div>
-            <div class="div-box2">
+            <section class="div-box2">
+              <h1>This is a section</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
                 eveniet doloremque, commodi optio possimus mollitia, illo
                 repellendus enim dolorem aliquid, cupiditate quae? Aut unde,
                 magni culpa praesentium exercitationem eius. Numquam!
               </p>
-            </div>
-            <div class="div-box3">
+            </section>
+            <article class="div-box3">
+              <h1>This is an article</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
                 eveniet doloremque, commodi optio possimus mollitia, illo
                 repellendus enim dolorem aliquid, cupiditate quae? Aut unde,
                 magni culpa praesentium exercitationem eius. Numquam!
               </p>
-            </div>
+              <aside class="aside">
+                <h4>This is an aside content</h2>
+                <p>Used to separate from the main content</p>
+              </aside>
+            </article>
           </div>
       </section>
       <section id="lists">
@@ -179,11 +212,13 @@
             <textarea id="textarea" placeholder="Escribe algo"></textarea>
             <button type="submit">Submit</button>
           </form>
-          <div id="submit-area">
-              
-          </div>
         </div>
       </section>
     </div>
+    <footer>
+      <p>
+        This is a footer
+      </p>
+    </footer>
   </body>
 </html>

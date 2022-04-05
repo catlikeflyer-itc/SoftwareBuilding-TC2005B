@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./cheatsheet.css" />
+    <script
+      src="https://kit.fontawesome.com/f6f40ebb56.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>HTML Cheatsheet</title>
+  </head>
+  <body>
+    <div class="title-container">
+      <h1 class="title-text">HTML Cheatsheet</h1>
+      <nav class="navbar">
+        This is a navbar, helps us to order navigation items.
+        <div class="navlinks">
+          <a href="index.html"><p>HTML</p></a>
+          <a href="css.html"><p>CSS</p></a>
+        </div>
+      </nav>
+    </div>
+    <div class="body-container">
+      <section id="borders">
+        <h2>Borders</h2>
+        <p><code>border</code>: draws a border around an item.</p>
+        <p>
+          <code>border-left, border-right, border-top, border-bottom</code>:
+          draws border on specified side.
+        </p>
+        <p><code>border-radius</code>: rounds corners of an item.</p>
+        <div class="white-render-box">
+          <div class="full-border">This has a full border.</div>
+          <div class="different-borders">
+            It has differently styled borders.
+          </div>
+          <div class="full-border radius">This has a radius of 50%</div>
+        </div>
+      </section>
+      <section id="background">
+        <h2>Backgrounds</h2>
+        <p><code>background-color</code>: sets a color as background.</p>
+        <p><code>background-image</code>: sets an imahe as background.</p>
+        <div class="white-render-box">
+          <div class="background-color">
+            This has a background color.
+          </div>
+          <div class="background-image">
+            This has a background image.
+          </div>
+          <div class="background-gradient">
+            This has a background gradient (using bg image).
+          </div>
+        </div>
+      </section>
+      <section id="fonts">
+        <h2>Text styling</h2>
+        <p><code>font-family</code>: sets a font family.</p>
+        <p><code>font-size</code>: sets a font size.</p>
+        <p><code>font-weight</code>: sets a font weight.</p>
+        <p><code>font-style</code>: sets a font style.</p>
+        <p><code>color</code>: sets the text color.</p>
+        <div class="white-render-box">
+          <div class="font-family">
+            This has a font family of Rubik Moonrocks.
+          </div>
+          <div class="font-size">
+            This has a font size of 40px.
+          </div>
+          <div class="font-weight">
+            This has a font weight of 900.
+          </div>
+          <div class="font-style">
+            This has a font style of italic.
+          </div>
+          <div class="color">
+            This has a greenyellow color.
+          </div>
+        </div>
+      </section>
+      <section id="sizing">
+        <h2>Sizing</h2>
+        <p><code>width</code>: sets the width of an item.</p>
+        <p><code>height</code>: sets the height of an item.</p>
+        <div class="white-render-box">
+          <div class="width">
+            This has a width of 250px and height of 100px
+          </div>
+          <div class="height">
+            This has a height of 250px and width of 100px.
+          </div>
+        </div>
+      </section>
+      <section id="margin-padding">
+        <h2>Margin and padding</h2>
+        <p><code>margin</code>: sets the space from outside the border of an item.</p>
+        <p><code>padding</code>: sets the space from inside the border of an item.</p>
+        <div class="white-render-box">
+          <div class="margin">
+            This has a margin of 20px.
+          </div>
+          <div class="padding">
+            This has a padding of 20px.
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>This is a footer</p>
+    </footer>
+  </body>
+</html>

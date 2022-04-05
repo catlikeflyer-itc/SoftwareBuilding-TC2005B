@@ -1,0 +1,212 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: aliceblue;
+  background-color: #222;
+  font-family: "Roboto", "sans-serif";  
+}
+
+.title-text {
+  font-family: "Rubik Moonrocks", cursive;
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+}
+
+.body-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", "sans-serif";
+}
+
+.body-container,
+h1,
+h2,
+h3,
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subtitle-text {
+  font-weight: 900;
+}
+
+.white-render-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: #222;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.white-render-box,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 5px;
+  padding: 5px;
+}
+
+.div-box1 {
+  background-color: pink;
+  margin: 10px;
+}
+
+.div-box2 {
+  background-color: greenyellow;
+  margin: 10px;
+}
+
+.div-box3 {
+  background-color: skyblue;
+  margin: 10px;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+.navbar {
+  color: aliceblue;
+  text-align: center;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navlinks a {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: 'Rubik Moonrocks', cursive;
+}
+
+.navlinks a:hover {
+  color: #2d2b22;
+  animation: alternate-color-change 1s infinite;
+  text-decoration: dashed;
+}
+
+.aside {
+  background-color: #f6d365;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(70, 70, 70);
+  color: aliceblue;
+}
+
+.full-border {
+  border: 1px solid #222;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+.different-borders {
+  border-left: 1px solid greenyellow;
+  border-right: 1px dotted pink;
+  border-top: 1px dashed skyblue;
+  border-bottom: 1px solid #f6d365;
+  margin: 10px;
+  padding: 20px;
+}
+
+.radius {
+  border-radius: 50%;
+}
+
+.background-color {
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffc400;
+}
+
+.background-image {
+  margin: 10px;
+  padding: 20px;
+  background-image: url(https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-size: cover;
+}
+
+.background-gradient {
+  margin: 10px;
+  padding: 20px;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+}
+
+.font-family {
+  font-family: 'Rubik Moonrocks', cursive;
+}
+
+.font-size {
+  font-size: 40px;
+}
+
+.font-weight {
+  font-weight: 900;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.color {
+  color: greenyellow;
+}
+
+.width {
+  width: 250px;
+  height: 100px;
+  color: aliceblue;
+  background-color: #222;
+  margin: 10px;
+}
+
+.height {
+  height: 250px;
+  width: 100px;
+  color: aliceblue;
+  background-color: #222;
+  margin:  10px;
+}
+
+.margin {
+  margin: 20px;
+  border: 1px solid #222;
+}
+
+.padding {
+  padding: 20px;
+  border: 1px solid #222;
+}
