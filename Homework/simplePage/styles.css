@@ -43,6 +43,7 @@ body {
     flex-direction: row;
     justify-content: center;
     color: aliceblue;
+    align-items: center;
 }
 
 #newsletter > * {
