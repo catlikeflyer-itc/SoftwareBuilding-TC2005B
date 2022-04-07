@@ -30,6 +30,12 @@ body {
     margin-right: 20px;
 }
 
+.nav-items a:hover {
+    color: rgb(255, 242, 0);
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
 #header {
     padding: 50px;
     text-align: center;
@@ -61,6 +67,10 @@ body {
     padding: 4px;
     font-size: 12px;
     font-weight: bold;
+    border-radius: 5px;
+}
+
+#email-form {
     border-radius: 5px;
 }
 
