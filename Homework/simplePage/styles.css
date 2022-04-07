@@ -37,6 +37,10 @@ body {
     color: white;
 }
 
+#header p {
+    text-align: left;
+}
+
 #newsletter {
     background-color: rgb(43, 63, 74);
     display: flex;
