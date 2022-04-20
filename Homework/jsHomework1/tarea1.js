@@ -45,13 +45,13 @@ const quickSort = (arr) => {
   if (arr.length <= 1) {
     return arr;
   } else {
-    var left = [];
-    var right = [];
-    var newArr = [];
-    var pivot = arr.pop();
-    var length = arr.length;
+    let left = [];
+    let right = [];
+    let newArr = [];
+    let pivot = arr.pop();
+    let length = arr.length;
 
-    for (var i = 0; i < length; i++) {
+    for (let i = 0; i < length; i++) {
       if (arr[i] <= pivot) {
         left.push(arr[i]);
       } else {
@@ -333,9 +333,9 @@ console.log(
 );
 
 /** Ejercicio 8
- * H0l4 Mund0 
- * 4b4cddb3c 
- * N3v3r 0dd 0r 3v3n 
+ * H0l4 Mund0
+ * 4b4cddb3c
+ * N3v3r 0dd 0r 3v3n
  */
 console.log(
   "Ejercicio 8\n",
@@ -372,9 +372,9 @@ console.log(
 );
 
 /** Ejercicio 10
- * [55, 34, 21, 13, 8, 5,  3,  2,  1] 
- * [9, 8, 7, 6, 5, 4, 3, 2, 1] 
- * [18, 16, 14, 10, 9,  6,  2,  1] 
+ * [55, 34, 21, 13, 8, 5,  3,  2,  1]
+ * [9, 8, 7, 6, 5, 4, 3, 2, 1]
+ * [18, 16, 14, 10, 9,  6,  2,  1]
  */
 console.log(
   "Ejercicio 10\n",
