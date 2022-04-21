@@ -1,0 +1,135 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    background-color: #171717;
+    color: aliceblue;
+}
+
+#header {
+    background-color: #322a35;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+#test-cases {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#test-cases h2 {
+    text-align: center;
+}
+
+.code-box {
+    background-color: #1f252f;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    border-radius: 10px;
+    color: #f5f5f5;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.code-box-header {
+    display: flex;
+    flex-direction: row;
+    color: #e5e5e5;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(45, 38, 52);
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    justify-content: start;
+    align-items: center;
+}
+
+.code-box-header h4 {
+    margin: 5px;
+    font-weight: 500;
+    font-size: small;
+}
+
+.red-circle {
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.yellow-circle {
+    background-color: #ffd700;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.green-circle {
+    background-color: #00ff00;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.toolbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.case-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1f252f;
+    color: #f5f5f5;
+}
+
+.comment {
+    color:rgb(197, 197, 197)
+}
+
+footer {
+    background-color: #322a35;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: aliceblue;
+}
+
+article {
+    margin-bottom: 20px;
+}

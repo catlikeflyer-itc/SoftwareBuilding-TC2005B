@@ -4,12 +4,370 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Primera actividad de JavaScript</title>
   </head>
   <body>
-    <h1>Primera actividad de JS</h1>
-    <h3>Por Do Hyun Nam, A01025276</h3>
-    <p>Abrir inspector y en consola supervisar tarea</p>
+    <section id="header">
+      <h1>Primera actividad de JS</h1>
+      <h3>Por Do Hyun Nam, A01025276</h3>
+      <p>
+        Abrir inspector y en consola supervisar tarea, preferiblemente usar Node
+        JS.
+      </p>
+    </section>
+    <section id="test-cases">
+      <h2>Test cases</h2>
+      <article class="exercise">
+        <h3>Ejercicio 1</h3>
+        <p>
+          Escribe una función que encuentre el primer carácter de un cadena de
+          texto que no se repite. Prueba tu función con: 'abacddbec'/p>
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 1</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code
+              >str1 = "Hola Mundo";<br />
+              str2 = "abacddbec";<br />
+              str3 = "Never odd or even";
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              out1 = "H";<br />
+              out2 = "e";<br />
+              out3 = "no hay";
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 2</h3>
+        <p>
+          Escribe una función que implemente el algoritmo 'bubble-sort' para
+          ordenar una lista de números.
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 2</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code
+              >arr1 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]; <br />
+              arr2 = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3, 2, 3,
+              8];<br />
+              arr3 = [1, 6, 9, 10, 14, 16, 18, 18, 1, 2, 2];
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              out1 = [1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br />
+              out2 = [6, 12, 13, 13, 14, 15, 15, 17];<br />
+              out3 = [1, 1, 2, 2, 6, 9, 10, 14, 16, 18, 18];
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 3</h3>
+        <p>
+          Escribe una función que implemente el algoritmo 'quick-sort' para
+          ordenar una lista de números.
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 3</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code
+              >arr1 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]; <br />arr2 = [3, 1, 4,
+              1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3, 2, 3, 8]; arr3 = [1, 6, 9,
+              10, 14, 16, 18, 18, 1, 2, 2];
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              out1 = [1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br />
+              out2 = [6, 12, 13, 13, 14, 15, 15, 17];<br />
+              out3 = [1, 1, 2, 2, 6, 9, 10, 14, 16, 18, 18];
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 4</h3>
+        <p>
+          Escribe dos funciones: la primera que invierta un arreglo de números y
+          regrese un nuevo arreglo con el resultado; la segunda que modifique el
+          mismo arreglo que se pasa como argumento. No se permite usar la
+          función integrada 'reverse'.
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 4.1 y 4.2</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code
+              >arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; <br />arr2 = [10, 9, 8,
+              7, 6, 5, 4, 3, 2, 1]; <br />
+              arr3 = [1, 2];
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              out1 = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];<br />
+              out2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br />
+              out3 = [2, 1];
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 5</h3>
+        <p>
+          Usando la definición de clase de Javascript ES6, crea una clase que se
+          llame 'Vector' que represente un vector de 3 dimensiones. La clase
+          debe de poder sumar y restar vectores, obtener su magnitud, obtener el
+          vector unitario, y multiplicar por un escalar.
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 5</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code>
+              vec1 = new vector(1, 2, 3);<br />
+              vec2 = new vector(2, 3, 1);<br />
+              vec3 = new vector(3, 1, -9);
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              vector 1 -> x = 1, y = 2, z = 3<br />
+              vector 2 -> x = 2, y = 3, z = 1<br />
+              vector 3 -> x = 3, y = 1, z = -9
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 6</h3>
+        <p>
+          Escribe una función que calcule el máximo común divisor de dos
+          números.
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 6</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code>
+              in1 = 12, 6;<br />
+              in2 = 45, 90;<br />
+              in3 = 57, 94;
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              out1 = 6;<br />
+              out2 = 45;<br />
+              out3 = 1;
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 7</h3>
+        <p>
+          Usando ojetos de tu clase 'Vector', crea una función que reciba dos
+          vectores, y que indique si esos vectores son ortogonales o no.
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 7</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Variables</code>
+            <code>
+              vec1 = new vector(1, 2, 3);<br />
+              vec2 = new vector(2, 3, 1);<br />
+              vec3 = new vector(3, 1, -9);
+            </code>
+            <br />
+            <code class="comment">// Inputs</code>
+            <code>
+              in1 = vec1, vec2; <br />
+              in2 = vec1, vec3; <br />
+              in3 = vec2, vec3;
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              vector 1 -> x = 1, y = 2, z = 3;<br />
+              vector 2 -> x = 2, y = 3, z = 1;<br />
+              vector 3 -> x = 3, y = 1, z = -9;
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 8</h3>
+        <p>
+          Crea una función que cambie una cadena de texto a 'Hacker Speak'. Por
+          ejemplo, para la cadena 'Javascript es divertido', su hacker speak es:
+          'J4v45c1pt 35 d1v3rt1d0'.
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 8</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code>
+              in1 = "Hola Mundo";<br />
+              in2 = "abacddbec";<br />
+              in3 = "Never odd or even";
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              out1 = "H0l4 Mund0"<br />
+              out2 = "4b4cddb3c"<br />
+              out3 = "N3v3r 0dd 0r 3v3n"
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 9</h3>
+        <p>
+          Escribe una función que reciba un número, y regrese una lista con
+          todos sus factores. Por ejemplo: factoriza(12) -> [1, 2, 3, 4, 6, 12].
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 9</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code>
+              in1 = 12<br />
+              in2 = 15<br />
+              in3 = 18000
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+
+            <code>
+              out1 = [1, 2, 3, 4, 6, 12] ;<br />
+              out2 = [1, 3, 5, 15] ;<br />
+              out3 = [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25,
+              30, 36, 40, 45, 48, 50, 60, 72, 75, 80, 90, 100, 120, 125, 144,
+              150, 180, 200, 225, 240, 250, 300, 360, 375, 400, 450, 500, 600,
+              720, 750, 900, 1000, 1125, 1200, 1500, 1800, 2000, 2250, 3000,
+              3600, 4500, 6000, 9000, 18000];
+            </code>
+          </div>
+        </div>
+      </article>
+      <article class="exercise">
+        <h3>Ejercicio 10</h3>
+        <p>
+          Escribe una función que quite los elementos duplicados de un arreglo y
+          regrese una lista con los elementos que quedan. Por ejemplo:
+          quitaDuplicados([1, 0, 1, 1, 0, 0]) -> [1, 0]
+        </p>
+        <div class="code-box">
+          <div class="code-box-header">
+            <div class="toolbox">
+              <div class="red-circle"></div>
+              <div class="yellow-circle"></div>
+              <div class="green-circle"></div>
+            </div>
+            <h4>Ejercicio 10</h4>
+          </div>
+          <div class="case-test">
+            <code class="comment">// Inputs</code>
+            <code>
+              arr1 = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55];<br />
+              arr2 = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3, 2, 3,
+              8];<br />
+              arr3 = [1, 6, 9, 10, 14, 16, 18, 18, 1, 2, 2];
+            </code>
+            <br />
+            <code class="comment">// Outputs</code>
+            <code>
+              out1 = [55, 34, 21, 13, 8, 5, 3, 2, 1];<br />
+              out2 = [9, 8, 7, 6, 5, 4, 3, 2, 1];<br />
+              out3 = [18, 16, 14, 10, 9, 6, 2, 1]
+            </code>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <p>Made with &hearts; by <a href="https://dhnam.space">DHNAM</a></p>
+    </footer>
     <script src="tarea1.js"></script>
   </body>
 </html>
