@@ -9,6 +9,7 @@ const nameForm = document.getElementById("form1");
 const rowsColsForm = document.getElementById("rows-cols");
 const table = document.getElementById("sampleTable");
 const table2 = document.getElementById("myTable");
+const image = document.querySelector("img");
 
 // Mouse position
 const mouseMove = (event) => {
@@ -71,18 +72,46 @@ const changeContent = (event) => {
 
 // Agregar y quitar colores
 const addColor = () => {
-  document.getElementById(
-    "colorSelect"
-  ).innerHTML += `<option>${"random"}</option>`;
+  const colors = [
+    "Red",
+    "Blue",
+    "Green",
+    "Yellow",
+    "Orange",
+    "Purple",
+    "Black",
+    "White",
+  ];
+  function randomColor(items) {
+    return items[Math.floor(Math.random() * items.length)];
+  }
+  document.getElementById("colorSelect").innerHTML += `<option>${randomColor(
+    colors
+  )}</option>`;
 };
 
-const removecolor = () => {
-  const color = document.getElementById("colorSelect").querySelectorAll("option")[-1];
-  color.parentElement.removeChild(color);
+const removeColor = () => {
+  const parent = document.getElementById("colorSelect");
+  const lastChild = document.getElementById("colorSelect").lastElementChild;
+  parent.removeChild(lastChild);
+};
+
+// Tamano de imagen
+const imageSize = (event) => {
+  event.preventDefault()
+
+  function randInt(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+
+  image.style.width = randInt(100, 300) + "px";
+  image.style.height = randInt(100, 300) + "px";
 }
 
 function main() {
   body.addEventListener("mousemove", mouseMove);
   nameForm.addEventListener("submit", getFormvalue);
   rowsColsForm.addEventListener("submit", changeContent);
+  image.addEventListener("mouseenter", imageSize);
+
 }
