@@ -10,6 +10,7 @@ const rowsColsForm = document.getElementById("rows-cols");
 const table = document.getElementById("sampleTable");
 const table2 = document.getElementById("myTable");
 const image = document.querySelector("img");
+const alerts = document.querySelectorAll(".alert");
 
 // Mouse position
 const mouseMove = (event) => {
@@ -23,11 +24,12 @@ const mouseMove = (event) => {
 const getFormvalue = (event) => {
   event.preventDefault();
   const fullName = document.getElementById("full-name");
+
   // Checar que ambos esten llenos
   if (nameForm["fname"].value && nameForm["lname"].value) {
     fullName.innerHTML = nameForm.fname.value + " " + nameForm.lname.value;
   } else {
-    fullName.innerHTML = "Please fill out both fields";
+    fullName.innerHTML = '<p class="alert">Please fill out both fields</p>';
   }
 };
 
@@ -65,7 +67,7 @@ const changeContent = (event) => {
         inputCol - 1
       ].innerHTML = rowsColsForm.content.value;
     } else {
-      rowsColsForm.innerHTML = `<p>Please enter valid information</p>`;
+      rowsColsForm.innerHTML = `<p class="alert">Please enter valid information</p>`;
     }
   }
 };
@@ -105,10 +107,10 @@ const imageSize = (event) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
-  image.src = `http://placekitten.com/${randInt(300, 600)}/${randInt(
-    300,
-    600
-  )}`;
+  image.src = `http://placekitten.com/${randInt(3, 6)*100}/${randInt(
+    3,
+    6
+  )*100}`;
 };
 
 function main() {
