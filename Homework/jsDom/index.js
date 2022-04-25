@@ -65,7 +65,7 @@ const changeContent = (event) => {
         inputCol - 1
       ].innerHTML = rowsColsForm.content.value;
     } else {
-      rowsColsForm.innerHTML += `<p>Please enter valid information</p>`;
+      rowsColsForm.innerHTML = `<p>Please enter valid information</p>`;
     }
   }
 };
@@ -98,20 +98,22 @@ const removeColor = () => {
 
 // Tamano de imagen
 const imageSize = (event) => {
-  event.preventDefault()
+  event.preventDefault();
 
-  function randInt(min, max) { // min and max included 
-    return Math.floor(Math.random() * (max - min + 1) + min)
+  function randInt(min, max) {
+    // min and max included
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
-  image.style.width = randInt(100, 300) + "px";
-  image.style.height = randInt(100, 300) + "px";
-}
+  image.src = `http://placekitten.com/${randInt(300, 600)}/${randInt(
+    300,
+    600
+  )}`;
+};
 
 function main() {
   body.addEventListener("mousemove", mouseMove);
   nameForm.addEventListener("submit", getFormvalue);
   rowsColsForm.addEventListener("submit", changeContent);
   image.addEventListener("mouseenter", imageSize);
-
 }
