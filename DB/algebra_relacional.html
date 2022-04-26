@@ -14611,8 +14611,105 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Solucion</p>
-<ol>
+<h2 id="Tablas">Tablas<a class="anchor-link" href="#Tablas">&#182;</a></h2><table>
+<thead><tr>
+<th>Competencia</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NombreCompetencia</td>
+<td>STR</td>
+</tr>
+<tr>
+<td>Puntos</td>
+<td>INT</td>
+</tr>
+<tr>
+<td>Tipo</td>
+<td>STR</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<table>
+<thead><tr>
+<th>Participantes</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Numero</td>
+<td>INT</td>
+</tr>
+<tr>
+<td>Apellido</td>
+<td>STR</td>
+</tr>
+<tr>
+<td>Nombre</td>
+<td>STR</td>
+</tr>
+<tr>
+<td>Nacionalidad</td>
+<td>STR</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<table>
+<thead><tr>
+<th>PuntosAcumulados</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Puntos</td>
+<td>INT</td>
+</tr>
+<tr>
+<td>Numero</td>
+<td>INT</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<table>
+<thead><tr>
+<th>Clasificacion</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NombreCompetencia</td>
+<td>STR</td>
+</tr>
+<tr>
+<td>Numero</td>
+<td>INT</td>
+</tr>
+<tr>
+<td>Lugar</td>
+<td>INT</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Solucion">Solucion<a class="anchor-link" href="#Solucion">&#182;</a></h2><ol>
 <li>$\Pi_{APELLIDO, NOMBRE}(\sigma_{NACIONALIDAD = 'Mexicana'}(Participantes))$</li>
 <li>$\sigma_{NACIONALIDAD = 'Estadounidense'}(\Pi_{APELLIDO, NOMBRE, PUNTOS ACUMULADOS}(Participantes \Join Puntos Acumulados))$</li>
 <li>$\sigma_{LUGAR = 1}(\Pi_{APELLIDO, NOMBRE}(Participantes \Join Clasificacion))$ *</li>
