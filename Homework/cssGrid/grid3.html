@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="wrapper3">
-        <div class="box3 a3">A</div>
-        <div class="box3 b3">B</div>
-        <div class="box3 c3">C</div>
-        <div class="box3 d3">D</div>
-        <div class="box3 e3">D</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid 3</title>
+    <style>
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+      }
+      .a {
+        grid-area: 1 / 1 / 2 / 7;
+        background-color: aqua;
+      }
+      .b {
+        grid-area: 2 / 1 / 4 / 3;
+        background-color: blueviolet;
+      }
+      .c {
+        grid-area: 2 / 3 / 4 / 7;
+        background-color: cadetblue;
+      }
+      .d {
+        grid-area: 4 / 1 / 5 / 7;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent4">
+      <div class="a4">a</div>
+      <div class="b4">b</div>
+      <div class="c4">c</div>
+      <div class="d4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, a ea
+        commodi quibusdam voluptatibus voluptate odit iure delectus in
+        architecto officia possimus aspernatur, ut alias vel harum distinctio,
+        cum animi?
       </div>
-</body>
+      <div class="e4">d</div>
+    </div>
+  </body>
 </html>

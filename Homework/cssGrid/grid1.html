@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid 3</title>
+    <title>Grid 1</title>
     <style>
       .parent {
         display: grid;
@@ -13,30 +13,40 @@
         grid-column-gap: 10px;
         grid-row-gap: 10px;
       }
-      .d {
-        grid-area: 2 / 1 / 3 / 2;
-        background-color: bisque;
-      }
-      .c {
-        grid-area: 2 / 2 / 3 / 3;
-        background-color: burlywood;
-      }
       .a {
-        grid-area: 1 / 1 / 2 / 3;
-        background-color: cadetblue;
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: aqua;
       }
       .b {
-        grid-area: 1 / 3 / 3 / 4;
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: blueviolet;
+      }
+      .c {
+        grid-area: 1 / 3 / 2 / 4;
+        background-color: cadetblue;
+      }
+      .d {
+        grid-area: 2 / 1 / 3 / 2;
         background-color: chartreuse;
+      }
+      .e {
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: chocolate;
+      }
+      .f {
+        grid-area: 2 / 3 / 3 / 4;
+        background-color: coral;
       }
     </style>
   </head>
   <body>
     <div class="parent">
-      <div class="d">c</div>
-      <div class="c">d</div>
       <div class="a">a</div>
       <div class="b">b</div>
+      <div class="c">c</div>
+      <div class="d">d</div>
+      <div class="e">e</div>
+      <div class="f">f</div>
     </div>
   </body>
 </html>
